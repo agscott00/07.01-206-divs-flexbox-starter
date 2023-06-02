@@ -108,11 +108,39 @@ body {
   height: 100%;
 }
 
+header, 
+footer {
+  background-color: rgba(167, 85, 231, 0.852);
+  color: white;
+  font-size: 3em;
+  height: auto;
+  width: 100%;
+  padding: 1em;
+}
+
+main {
+  background-color: coral;
+  color: white;
+  font-size: 3em;
+  height: auto;
+  width: 100%;
+  padding: 1em;
+}
+
+header,
+footer,
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
   display: flex;
   justify-content: space-between;
+  flex-flow: row wrap;
  
 }
 
@@ -124,6 +152,7 @@ body {
   background-color: #27f710ca;
   height: auto;
   width: 30%;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
